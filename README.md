@@ -1,2 +1,2 @@
 # top-gun-movies
-Top Gun Academy Projext
+Top Gun Academy Project
