@@ -1,0 +1,24 @@
+{
+  "name": "top-gun-movies",
+  "version": "1.0.0",
+  "description": "Movies library project built for Top Gun Academy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisrojascr/top-gun-movies.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisrojascr/top-gun-movies/issues"
+  },
+  "homepage": "https://github.com/luisrojascr/top-gun-movies#readme",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.0"
+  }
+}
