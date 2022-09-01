@@ -76,7 +76,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'webpack Boilerplate',
       favicon: path.resolve(__dirname, '../public') + '/images/favicon.png',
-      template: path.resolve(__dirname, '../src') + '/template.html', // template file
+      template: path.resolve(__dirname, '../src') + '/index.html', // template file
       filename: 'index.html', // output file
     }),
   ],
