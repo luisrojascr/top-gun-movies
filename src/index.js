@@ -1,3 +1,5 @@
+import '@/styles/normalize.scss'
+import '@/styles/reset.local.scss'
 import '@/styles/index.scss'
 
 // Create heading node
