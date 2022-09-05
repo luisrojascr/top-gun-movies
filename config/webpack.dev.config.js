@@ -74,8 +74,8 @@ module.exports = {
       ],
     }),
     new HtmlWebpackPlugin({
-      title: 'webpack Boilerplate',
-      favicon: path.resolve(__dirname, '../public') + '/images/favicon.png',
+      title: 'Movie Library Top Gun',
+      favicon: path.resolve(__dirname, '../public') + '/images/Logo.svg',
       template: path.resolve(__dirname, '../src') + '/index.html', // template file
       filename: 'index.html', // output file
     }),
