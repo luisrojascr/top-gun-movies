@@ -5,7 +5,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: {
+    index: './src/pages/home/index.js',
+    favorites: './src/pages/favorites/favorites.js',
+  },
   devtool: false,
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -76,8 +79,16 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Movie Library Top Gun',
       favicon: path.resolve(__dirname, '../public') + '/images/Logo.svg',
-      template: path.resolve(__dirname, '../src') + '/index.html', // template file
-      filename: 'index.html', // output file
+      template: path.resolve(__dirname, '../src') + '/pages/home/index.html',
+      chunks: ['index'],
+      filename: 'index.html',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Movie Library Top Gun - Favorites',
+      favicon: path.resolve(__dirname, '../public') + '/images/Logo.svg',
+      template: path.resolve(__dirname, '../src') + '/pages/favorites/favorites.html',
+      chunks: ['favorites'],
+      filename: 'favorites.html',
     }),
   ],
   resolve: {
