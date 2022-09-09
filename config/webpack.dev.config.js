@@ -8,6 +8,7 @@ module.exports = {
   entry: {
     index: './src/pages/home/index.js',
     favorites: './src/pages/favorites/favorites.js',
+    detail: './src/pages/detail/detail.js',
   },
   devtool: false,
   output: {
@@ -89,6 +90,13 @@ module.exports = {
       template: path.resolve(__dirname, '../src') + '/pages/favorites/favorites.html',
       chunks: ['favorites'],
       filename: 'favorites.html',
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Movie detail',
+      favicon: path.resolve(__dirname, '../public') + '/images/Logo.svg',
+      template: path.resolve(__dirname, '../src') + '/pages/detail/detail.html',
+      chunks: ['detail'],
+      filename: 'detail.html',
     }),
   ],
   resolve: {

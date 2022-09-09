@@ -1,7 +1,26 @@
+@import '../../styles/global.scss';
+
 .main-bar__right {
   padding-top: 100px;
+  text-align: center;
 }
 
 .footer-index {
   margin-top: 50px;
+}
+.main-bar__right {
+  h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: $midnightBlue;
+  }
+}
+.main-bar__right-comment {
+  border: 1px solid $lightBlue;
+  padding: 20px;
+  margin-top: 10px;
+  font-style: italic;
+  @media screen and (min-width: $medium) {
+    width: 80%;
+  }
 }
