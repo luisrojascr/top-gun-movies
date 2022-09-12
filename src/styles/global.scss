@@ -3,7 +3,7 @@ $lightBlue: #dbe4ed;
 $grayishBLue: #a3bad2;
 $midnightBlue: #436280;
 $darkBlue: #112236;
-$medium: 750px;
+$medium: 850px;
 $big: 1200px;
 * {
   font-family: 'Montserrat', sans-serif;
@@ -25,9 +25,9 @@ $big: 1200px;
       margin-right: 20px;
     }
   }
-  &__menu {
-    filter: invert(100%);
-    width: 40px;
+  &__bars {
+    font-size: 40px;
+    color: $white;
     @media screen and (min-width: $medium) {
       display: none;
     }
@@ -121,8 +121,27 @@ $big: 1200px;
     }
     @media screen and (min-width: $medium) {
       flex-direction: row;
+      justify-content: space-around;
       text-align: left;
     }
+  }
+  .main-bar__right-plus {
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: $darkBlue;
+    margin-top: 20px;
+    i {
+      padding: 10px;
+      font-size: 60px;
+      color: $white;
+    }
+    &:hover {
+      background-color: $midnightBlue;
+    }
+  }
+  @media screen and (min-width: $medium) {
+    margin-top: 0;
+    margin-left: 10px;
   }
 }
 .footer-index {

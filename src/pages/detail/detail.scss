@@ -1,0 +1,26 @@
+@import '../../styles/global.scss';
+
+.main-bar__right {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  @media screen and (min-width: $medium) {
+    flex-direction: row;
+    margin-top: 0;
+  }
+}
+.main-bar__right__info {
+  h2 {
+    margin: 10px 0;
+    color: $darkBlue;
+  }
+}
+.main-bar__right-button {
+  display: block;
+  background-color: $lightBlue;
+  padding: 10px;
+  border: 1px solid $darkBlue;
+}
