@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Movie Library Top Gun" />
+    <meta name="description" content="A movie page to search and rating your favorite movie" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/be89ee8023.js" crossorigin="anonymous"></script>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <header class="header-index">
+      <img class="header-index__img" src="/Logo.svg" alt="Movie-library-logo" />
+      <h1>Movie Detail</h1>
+      <div class="header-index__bars"><i class="fa-solid fa-bars"></i></div>
+    </header>
+    <main class="main-bar">
+      <section class="main-bar__left">
+        <nav class="main-bar__left-nav">
+          <ul>
+            <li><a href="index.html">Back</a></li>
+            <!-- <li><a href="#">Trending Movies</a></li> -->
+          </ul>
+        </nav>
+      </section>
+      <section class="main-bar__right">
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BMGVmMWNiMDktYjQ0Mi00MWIxLTk0N2UtN2ZlYTdkN2IzNDNlXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg"
+          alt="harry-potter"
+        />
+        <div class="main-bar__right-info">
+          <h2>Harry Potter and the Deathly Hallows: Part 2</h2>
+          <p>2011</p>
+          <div class="main-bar__right-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <form action="/index.html">
+            <textarea
+              name=""
+              id=""
+              cols="40"
+              rows="10"
+              placeholder="Write your comments..."
+            ></textarea>
+            <button class="main-bar__right-button">Add to favorite</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer-index">
+      <p>&copy; Created by Luis Salazar and Kevin Marín</p>
+    </footer>
+    <!-- <div id="root"></div> -->
+  </body>
+</html>
