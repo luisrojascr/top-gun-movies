@@ -7,9 +7,23 @@
   justify-content: space-around;
   align-items: center;
   margin-top: 100px;
+  form {
+    margin: 10px 0;
+  }
+  img {
+    width: 200px;
+  }
   @media screen and (min-width: $medium) {
     flex-direction: row;
     margin-top: 0;
+    img {
+      width: 240px;
+    }
+  }
+  @media screen and (min-width: $big) {
+    img {
+      width: 350px;
+    }
   }
 }
 .main-bar__right__info {
@@ -23,4 +37,11 @@
   background-color: $lightBlue;
   padding: 10px;
   border: 1px solid $darkBlue;
+}
+.main-bar__right-stars {
+  user-select: none;
+}
+.star {
+  font-size: 30px;
+  color: $midnightBlue;
 }
