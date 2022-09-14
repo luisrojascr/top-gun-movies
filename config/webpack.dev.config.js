@@ -6,9 +6,9 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 module.exports = {
   mode: 'development',
   entry: {
-    index: './src/pages/home/index.js',
-    favorites: './src/pages/favorites/favorites.js',
-    detail: './src/pages/detail/detail.js',
+    index: './src/pages/home/index.ts', //
+    favorites: './src/pages/favorites/favorites.ts',
+    detail: './src/pages/detail/detail.ts',
   },
   devtool: false,
   output: {
